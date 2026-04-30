@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>MY PORTFOLIO</title>
+  <style>
+    main {
+      max-width: 1020px;
+      margin: 0 auto;
+
+    }
+
+    .body {
+      background: linear-gradient(to right,
+          #a9a9a9,
+          #0000);
+
+    }
+
+    .myclass {
+      background-color: #FFFDF2;
+    }
+
+    .h1 {
+      color: #7B3F00;
+    }
+
+    #aboutme {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .my-cards {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .my-cards .card {
+      background-color: rgb(212, 23, 152);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+
+    #abouthobby {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    #navbar {
+      background-color: black;
+      color: white;
+
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-size: 18px;
+      padding: 18px;
+      align-items: center;
+    }
+
+    .inner-nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    .inner-nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #progress {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+
+
+    #range {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+    #table {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+
+    }
+
+    #audio {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+    #video {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+    .form-outer {
+      display: flex;
+      align-items: center;
+      padding-left: 8px;
+    }
+
+
+
+    #myform form {
+      font-size: 18px;
+
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 2px;
+    }
+
+    #myform {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+
+    #secret {
+      background: linear-gradient(to right,
+          #6CD0FF,
+          #1C2E4c);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+    .mylogo {
+      max-width: 60px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .my-cards {
+        flex-direction: column;
+      }
+
+      #navbar {
+        flex-direction: column;
+      }
+
+      .form-outer {
+        flex-direction: column;
+      }
+    }
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <main>
+    <nav id="navbar">
+      <img class="mylogo" src="C:\Users\Administrator\Desktop\web designing workshop\HTML\download.jpeg"
+        alt="my logo image">
+      <div class="inner-nav">
+        <a href="#aboutme"> About me </a>
+        <a href="#abouthobby"> About hobbies </a>
+        <a href="#myform"> Contact Us </a>
+      </div>
+    </nav>
+
+    <section class="myclass" id="aboutme">
+      <div class="my-cards">
+        <div class="card">
+          <h1>My name is Ashraf Ali Solanki.</h1>
+          <h2>I'm from 2nd sem and from BCA stream.</h2>
+
+        </div>
+
+        <div class="card">
+          <h1>I love to drive cars & bike</h1>
+          <h3> i love to play cricket</h3>
+        </div>-
+
+    </section>
+
+
+    <section id="progress">
+      <h1>My progress</h1>
+      <div class="my-cards">
+        <div class="card">
+          <label>Html progress</label>
+          <progress value="65" max="100"></progress>
+        </div>
+        <div class="card">
+          <label>My course progress </label>
+          <meter value="65" min="3" max="100" low="4" high="7"></meter>
+        </div>
+    </section>
+
+    <section id="myform">
+      <h1>CONTACT US</h1>
+      <div class="form-outer">
+        <div class="my-details">
+          <h3>My Email</h3>
+          <p>helloashraf@gmail.com</p>
+          <h3>My Phone</h3>
+          <p>+91 1234321789</p>
+        </div>
+        <form id="myForm">
+          <input id="name" name="TEXT" placeholder="Your Name">
+          <br>
+          <input type="text" name="Email" placeholder="Your Email">
+
+          <br>
+          <select>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+          </select>
+
+          <br>
+          <input list="browsers" id="mylist" placeholder="select or type">
+          <datalist id="browsers">
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+          </datalist>
+          <br>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <br>
+          <input type="date" name="date">
+          <br>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="abouthobby">
+      <h1 class="h1">MY HOBBIES</h1>
+      <h3>Travelling</h3>
+      <p>My favourie hobby is traveling. i like all kinds of travel by car, train, etc. </p>
+    </section>
+
+    <section id="secret">
+      <details>
+        <summary>I have a secret</summary>
+        <p>
+          I am spiderman.</p>
+      </details>
+    </section>
+
+    <section id="range">
+      <input type="color" name="color">
+      <br>
+      <input type="date" name="date">
+      <br>
+      <input type="range" value="70" max="100">
+    </section>
+
+    <section id="table">
+      <table border="1px">
+        <thead>
+          <th>Sr. No.</th>
+          <th>Student Name</th>
+          <th>Student Class</th>
+          <th> Student Hobby</th>
+          <th>Progress</th>
+          <th>Student Record</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mohit</td>
+            <td>1st Year</td>
+            <td> VolleyBall </td>
+            <td> <progress value="75" max="100"></progress> </td>
+            <td> <meter value="59" min="3" max="100" low="4" high="7"></meter> </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td> Sobhit</td>
+            <td>2nd Year</td>
+            <td> Study </td>
+            <td> <progress value="65" max="100"></progress></td>
+            <td> <meter value="51" min="3" max="100" low="4" high="7"></meter> </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+    <section id="audio">
+      <audio controls loop>
+        <source src="diltohbachha.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section id="video">
+      <video loop controls muted style="width: 500px;">
+        <source src="Rickroll.mp4" type="video/mp4">
+      </video>
+    </section>
+
+  </main>
+
+  <script>
+    let myForm = document.getElementById("myForm");
+
+    myForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let myName = document.getElementById("name");
+      let nameValue = myName.value;
+
+      if (nameValue === "") {
+        alert("Enter name first");
+      }
+      else {
+        alert("Success!!");
+      }
+
+    });
+
+  </script>
+</body>
+
+</html>
